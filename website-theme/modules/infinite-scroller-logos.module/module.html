@@ -1,0 +1,20 @@
+<section class="py-16 {% if module.dark %} bg-brand-900 {% endif %}">
+	<div class="scroll-container">
+		<div class="scroll-list">
+			{% for item in module.image %}
+			{% if item.src %}
+			{% set sizeAttrs = 'width="{{ item.width }}" height="{{ item.height }}"' %}
+			{% if item.size_type == 'auto' %}
+			{% set sizeAttrs = 'width="{{ item.width }}" height="{{ item.height }}" style="max-width: 100%; height: auto;"' %}
+			{% elif item.size_type == 'auto_custom_max' %}
+			{% set sizeAttrs = 'width="{{ item.max_width }}" height="{{ item.max_height }}" style="max-width: 100%; height: auto;"' %}
+			{% endif %}
+			{% set loadingAttr = item.loading != 'disabled' ? 'loading="{{ item.loading }}"' : '' %}
+			<div class="scroll-item aspect-[387/254] max-w-[220px]" v-for="logo in logos">
+				<img class="w-full h-[100%!important]] object-cover" src="{{ item.src }}" alt="{{ item.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+			</div>
+			{% endif %}
+			{% endfor %}
+		</div>
+	</div>
+</section>

@@ -1,0 +1,30 @@
+<!--
+  templateType: none
+-->
+<!doctype html>
+<html lang="{{ html_lang }}" {{ html_lang_dir }}>
+  <head>
+    <meta charset="utf-8">
+    {% if page_meta.html_title or pageTitle %}<title>{{ page_meta.html_title or pageTitle }}</title>{% endif %}
+    {% if brand_settings.primaryFavicon.src %}<link rel="shortcut icon" href="{{ brand_settings.primaryFavicon.src }}" />{% endif %}
+    <meta name="description" content="{{ page_meta.meta_description }}">
+    {{ require_css(get_asset_url("../../css/output.css")) }}
+    {{ standard_header_includes }}
+	  {% include /website-theme/templates/partials/structured-data.html %}
+  </head>
+  <body>
+    <div>
+
+		{% include /website-theme/templates/partials/header.html %}
+      <main>
+        {% block body %}
+        {% endblock body %}
+      </main>
+		{% include /website-theme/templates/partials/footer.html %}
+
+    </div>
+    {{ require_js(get_asset_url("../../js/main.js")) }}
+    {# To see a full list of what is included via standard_footer_includes please reference this article: https://developers.hubspot.com/docs/cms/hubl/variables#required-page-template-variables #}
+    {{ standard_footer_includes }}
+  </body>
+</html>

@@ -1,0 +1,28 @@
+/* INFNITIE SCROLL STYLES*/
+.scroll-container-text {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.scroll-list-text {
+    display: flex;
+}
+
+.scroll-item-text {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+ .bg-brand-900
+.scroll-item-text h1, .bg-brand-900 .scroll-item-text h2, .bg-brand-900 .scroll-item-text h3, .bg-brand-900 .scroll-item-text h4, .bg-brand-900 .scroll-item-text h5, .bg-brand-900 .scroll-item-text h6, .bg-brand-900 .scroll-item-text p, .bg-brand-900 .scroll-item-text span, .bg-brand-900 .scroll-item-text a {
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}

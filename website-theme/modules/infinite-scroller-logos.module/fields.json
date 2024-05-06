@@ -1,0 +1,64 @@
+[ {
+  "id" : "bfb0f5ac-690d-bc92-ae46-b5a35c10b7dd",
+  "name" : "image",
+  "display_width" : null,
+  "label" : "Image",
+  "required" : false,
+  "locked" : false,
+  "occurrence" : {
+    "min" : 1,
+    "max" : null,
+    "sorting_label_field" : null,
+    "default" : 5
+  },
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "default" : [ {
+    "size_type" : "auto",
+    "src" : "https://39756197.fs1.hubspotusercontent-na1.net/hubfs/39756197/logo.avif",
+    "alt" : "logo",
+    "loading" : "lazy",
+    "width" : 111,
+    "height" : 52,
+    "max_width" : 111,
+    "max_height" : 52
+  }, {
+    "size_type" : "auto",
+    "src" : "https://39756197.fs1.hubspotusercontent-na1.net/hubfs/39756197/logo.avif",
+    "alt" : "logo",
+    "loading" : "lazy",
+    "width" : 111,
+    "height" : 52,
+    "max_width" : 111,
+    "max_height" : 52
+  }, {
+    "size_type" : "auto",
+    "src" : "https://39756197.fs1.hubspotusercontent-na1.net/hubfs/39756197/logo.avif",
+    "alt" : "logo",
+    "loading" : "lazy",
+    "width" : 111,
+    "height" : 52,
+    "max_width" : 111,
+    "max_height" : 52
+  }, {
+    "size_type" : "auto",
+    "src" : "https://39756197.fs1.hubspotusercontent-na1.net/hubfs/39756197/logo.avif",
+    "alt" : "logo",
+    "loading" : "lazy",
+    "width" : 111,
+    "height" : 52,
+    "max_width" : 111,
+    "max_height" : 52
+  }, {
+    "size_type" : "auto",
+    "src" : "https://39756197.fs1.hubspotusercontent-na1.net/hubfs/39756197/logo.avif",
+    "alt" : "logo",
+    "loading" : "lazy",
+    "width" : 111,
+    "height" : 52,
+    "max_width" : 111,
+    "max_height" : 52
+  } ]
+} ]
